@@ -5,9 +5,24 @@ import EmptyCart from "./EmptyCart";
 import { ProductConsumer } from "../../context";
 import CartList from "./CartList";
 import CartTotals from "./CartTotals";
+import { Redirect } from "react-router-dom";
 
 export default class Cart extends Component {
+  constructor(props) {
+    super(props);
+    const token = localStorage.getItem("token");
+    let loggedIn = true;
+    if (token === null) {
+      loggedIn = false;
+    }
+    this.state = {
+      loggedIn
+    };
+  }
   render() {
+    if (this.state.loggedIn === false) {
+      return <Redirect to="/" />;
+    }
     return (
       <section>
         <ProductConsumer>

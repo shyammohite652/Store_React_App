@@ -2,9 +2,24 @@ import React, { Component } from "react";
 import Product from "./Product";
 import Title from "./Title";
 import { ProductConsumer } from "../context";
+import { Redirect } from "react-router-dom";
 
 export default class ProductList extends Component {
+  constructor(props) {
+    super(props);
+    const token = localStorage.getItem("token");
+    let loggedIn = true;
+    if (token === null) {
+      loggedIn = false;
+    }
+    this.state = {
+      loggedIn
+    };
+  }
   render() {
+    if (this.state.loggedIn === false) {
+      return <Redirect to="/" />;
+    }
     //  console.log(this.state.storedProducts);
     return (
       //  <Product></Product>

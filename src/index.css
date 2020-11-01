@@ -1,13 +1,213 @@
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800");
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  /* background: #1C8EF9 !important; */
+  min-height: 100vh;
+  display: flex;
+  font-weight: 400;
+  font-family: "Fira Sans", sans-serif;
+}
+
+label {
+  font-weight: 500;
+  font-family: "Fira Sans", sans-serif;
+}
+
+.mySpan {
+  font-size: 14px;
+  font-style: italic;
+}
+
+body,
+html,
+.App,
+#root,
+.auth-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.navbar-light {
+  background-color: #ffffff;
+  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+}
+
+.auth-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: left;
+}
+
+.auth-inner {
+  width: 450px;
+  margin: auto;
+  background: #ffffff;
+  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+  padding: 40px 55px 45px 55px;
+  border-radius: 15px;
+  transition: all 0.3s;
+}
+
+.auth-inner1 {
+  background: #ffffff;
+  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+  padding: 0px 55px 0px 55px;
+  transition: all 0.3s;
+}
+
+.auth-wrapper .form-control:focus {
+  border-color: #167bff;
+  box-shadow: none;
+}
+
+.auth-wrapper h3 {
+  text-align: center;
+  margin: 0;
+  line-height: 1;
+  padding-bottom: 20px;
+}
+
+.custom-control-label {
+  font-weight: 400;
+}
+
+.forgot-password,
+.forgot-password a {
+  text-align: right;
+  font-size: 13px;
+  padding-top: 10px;
+  color: #7f7d7d;
+  margin: 0;
+}
+
+.forgot-password a {
+  color: #167bff;
+}
+
+.forms {
+  background: #fff;
+  box-shadow: 0 0 3px #000;
+  margin: 30px auto;
+  max-width: 500px;
+  overflow: hidden;
+  position: relative;
+  padding: 0;
+}
+.forms h1 {
+  padding: 0 0 20px 0;
+  font-size: 26px;
+  color: #666;
+  font-weight: lighter;
+  text-align: center;
+}
+.forms form {
+  padding: 30px;
+}
+#signup {
+  display: none;
+}
+.forms .tab-group {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.forms .tab-group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.forms .tab-group li a {
+  display: block;
+  text-decoration: none;
+  padding: 15px;
+  background: #e5e6e7;
+  color: #888;
+  font-size: 20px;
+  float: left;
+  width: 50%;
+  text-align: center;
+  border-top: 3px solid transparent;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+.forms .tab-group li a:hover {
+  background: #dedfdf;
+  color: #666;
+}
+.forms .tab-group .active a {
+  background: #fff;
+  color: #444;
+  /* border-top: 3px solid #73cf41; */
+}
+.forms input {
+  font-size: 16px;
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+  border: 1px solid #ddd;
+  color: #666;
+  border-radius: 0;
+  margin-bottom: 10px;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+.forms input:focus {
+  outline: 0;
+  border-color: #2e5ed7;
+}
+/* .forms label {
+  font-size: 16px;
+  font-weight: normal;
+  color: #666;
+  margin-bottom: 5px;
+  display: block;
+} */
+.forms .button {
+  border: 0;
+  outline: none;
+  border-radius: 0;
+  padding: 10px 0;
+  font-size: 18px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background: #73cf41;
+  color: #ffffff;
+  cursor: pointer;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+.forms .button:hover,
+.button:focus {
+  background: #56ae26;
+}
+.text-p {
+  text-align: right;
+}
+.text-p a {
+  color: #1383ea;
 }

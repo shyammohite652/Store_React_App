@@ -5,7 +5,11 @@
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
+    "@emmetio/html-transform": "0.3.10",
+    "@emmetio/markup-formatters": "0.4.1",
+    "@emmetio/snippets": "0.2.12",
     "bootstrap": "4.5.3",
+    "emmet": "2.1.6",
     "font-awesome": "4.7.0",
     "react": "16.14.0",
     "react-dom": "16.14.0",
