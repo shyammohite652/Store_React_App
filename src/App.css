@@ -43,3 +43,7 @@ body {
   font-size: 1.2rem;
   color: var(--mainYellow);
 }
+
+.logo {
+  margin-left: 60px;
+}

@@ -4,7 +4,7 @@ import Title from "./Title";
 import { ProductConsumer } from "../context";
 import { Redirect } from "react-router-dom";
 
-export default class ProductList extends Component {
+export default class MobileList extends Component {
   constructor(props) {
     super(props);
     const token = localStorage.getItem("token");
@@ -28,13 +28,11 @@ export default class ProductList extends Component {
             <div className="row">
               <ProductConsumer>
                 {(value) => {
-                  return (
-                    value.products
-                      // .filter((item) => item.category === "fridge")
-                      .map((product) => {
-                        return <Product key={product.id} product={product} />;
-                      })
-                  );
+                  return value.products
+                    .filter((item) => item.category === "mobile")
+                    .map((product) => {
+                      return <Product key={product.id} product={product} />;
+                    });
                 }}
               </ProductConsumer>
             </div>

@@ -12,12 +12,20 @@ import Login from "./Components/Login/Login";
 import Logout from "./Components/Login/Logout";
 import SignUp from "./Components/Login/Signup";
 import Forgot from "./Components/Login/ForgotPassword";
+import Sidebar from "./Components/Sidebar";
+import MobileList from "./Components/MobileList";
+import FridgeList from "./Components/FridgeList";
 
 function App() {
   return (
     // <React.Fragment>
     //   <Navbar></Navbar>
     <Router>
+      {/* <div id="page-wrap">
+          <h1>Cool Restaurant</h1>
+          <h2>Check out our offerings in the sidebar!</h2>
+        </div> */}
+
       {/* <nav className="navbar navbar-expand-lg navbar-light ">
         <div className="container">
           <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
@@ -36,30 +44,58 @@ function App() {
           </div>
         </div>
       </nav> */}
-
       <Switch>
         <Route exact path="/" component={Login} />
         <Route path="/login" component={Login} />
         <Route path="/logout" component={Logout} />
         <Route path="/signup" component={SignUp} />
         <Route path="/forgot" component={Forgot} />
+
         <Route path="/productList">
+          <Sidebar
+            pageWrapId={"page-wrap"}
+            outerContainerId={"outer-container"}
+          />
           <Navbar />
           <ProductList />
         </Route>
 
+        <Route path="/mobileList">
+          <Sidebar
+            pageWrapId={"page-wrap"}
+            outerContainerId={"outer-container"}
+          />
+          <Navbar />
+          <MobileList />
+        </Route>
+        <Route path="/fridgeList">
+          <Sidebar
+            pageWrapId={"page-wrap"}
+            outerContainerId={"outer-container"}
+          />
+          <Navbar />
+          <FridgeList />
+        </Route>
+
         <Route path="/details">
+          <Sidebar
+            pageWrapId={"page-wrap"}
+            outerContainerId={"outer-container"}
+          />
           <Navbar />
           <Details />
         </Route>
 
         <Route path="/cart">
+          <Sidebar
+            pageWrapId={"page-wrap"}
+            outerContainerId={"outer-container"}
+          />
           <Navbar />
           <Cart />
         </Route>
 
         <Route>
-          <Navbar />
           <Default />
         </Route>
       </Switch>
