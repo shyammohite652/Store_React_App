@@ -8,12 +8,6 @@ export default class Logout extends Component {
     localStorage.removeItem("token");
   }
   render() {
-    return (
-      <Redirect to="/" />
-      // <div>
-      //   <h1>You have been logged out!!!</h1>
-      //   <Link to="/">Login Again</Link>{" "}
-      // </div>
-    );
+    return <Redirect to="/" />;
   }
 }

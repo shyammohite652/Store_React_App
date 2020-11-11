@@ -15,6 +15,7 @@ export default class MobileList extends Component {
     this.state = {
       loggedIn
     };
+    console.log(props);
   }
   render() {
     if (this.state.loggedIn === false) {

@@ -13,7 +13,7 @@ export default class Login extends Component {
     this.state = {
       username: "",
       password: "",
-      error : false,
+      error: false,
       loggedIn
     };
     this.onChange = this.onChange.bind(this);
@@ -37,7 +37,7 @@ export default class Login extends Component {
       this.setState({
         loggedIn: true
       });
-    }else{
+    } else {
       this.setState({
         error: true
       });
@@ -48,28 +48,6 @@ export default class Login extends Component {
       return <Redirect to="/productList" />;
     }
     return (
-      // <div>
-      //   <h1>Login</h1>
-      //   <form onSubmit={this.submitForm}>
-      //     <input
-      //       type="text"
-      //       placeholder="Username"
-      //       name="username"
-      //       value={this.state.username}
-      //       onChange={this.onChange}
-      //     />
-      //     <br />
-      //     <input
-      //       type="password"
-      //       placeholder="Password"
-      //       name="password"
-      //       value={this.state.password}
-      //       onChange={this.onChange}
-      //     />
-      //     <br />
-      //     <input type="submit" />
-      //   </form>
-      // </div>
       <div className="forms">
         <ul className="tab-group">
           <li className="tab active">
@@ -83,8 +61,6 @@ export default class Login extends Component {
         <div className="auth-wrapper">
           <div className="auth-inner1">
             <form onSubmit={this.submitForm}>
-              {/* <h3>Sign In</h3> */}
-
               <div className="form-group">
                 <label>Username</label>
                 <input
@@ -118,16 +94,21 @@ export default class Login extends Component {
                   />
                   <label
                     className="custom-control-label"
-                    htmlFor="customCheck1">
+                    htmlFor="customCheck1"
+                  >
                     Remember me
                   </label>
                 </div>
               </div>
 
-              {this.state.error ? <span style={{color: "red"}}>Username or password is incorrect !!!</span> : ''}
-               
+              {this.state.error ? (
+                <span style={{ color: "red" }}>
+                  Username or password is incorrect !!!
+                </span>
+              ) : (
+                ""
+              )}
 
-              {/* <input type="submit" className="btn btn-primary btn-block" /> */}
               <button type="submit" className="btn btn-primary btn-block">
                 Login
               </button>

@@ -68,7 +68,7 @@ export const storeProducts = [
     id: 6,
     title: "Vintage Iphone",
     img: "img/product-6.png",
-    price: 17,
+    price: 27,
     company: "apple",
     category: "mobile",
     info:
@@ -107,7 +107,7 @@ export const storeProducts = [
     id: 9,
     title: "Samsung 192 L",
     img: "img/product-9.png",
-    price: 15,
+    price: 9,
     company: "Samsung",
     category: "fridge",
     info:

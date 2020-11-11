@@ -13,8 +13,9 @@ export default class Product extends Component {
           <ProductConsumer>
             {(value) => (
               <div
-                className="img-container p-5"
-                onClick={() => value.handleDetail(id)}>
+                className="img-container p-5 footerBottom"
+                onClick={() => value.handleDetail(id)}
+              >
                 <Link to="/details">
                   <img src={img} alt="product" className="card-img-top" />
                 </Link>
@@ -24,7 +25,8 @@ export default class Product extends Component {
                   onClick={() => {
                     value.addToCart(id);
                     value.openModal(id);
-                  }}>
+                  }}
+                >
                   {inCart ? (
                     <p className="text-capitalize mb-0" disabled>
                       in Cart

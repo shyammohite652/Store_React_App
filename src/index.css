@@ -211,3 +211,15 @@ html,
 .text-p a {
   color: #1383ea;
 }
+
+.card {
+  height: 100%;
+}
+
+.footerBottom {
+  margin-bottom: auto;
+}
+.card-img-top {
+  height: fit-content;
+  object-fit: contain;
+}

@@ -6,17 +6,8 @@ import { ButtonContainer } from "./Button";
 
 export default class NavBar extends Component {
   render() {
-    // const ConditionalLink = ({ children, to, condition }) =>
-    //   !!condition && to ? <Link to={to}>{children}</Link> : <>{}</>;
     return (
       <NavWrapper className="navbar navbar-expand-sm bg-primary navbar-dark px-sm-5">
-        {/* <Link to="/">
-        <Sidebar
-           pageWrapId={"page-wrap"}
-           outerContainerId={"outer-container"}
-        />
-        </Link> */}
-
         <Link to="/" className="logo">
           <img src={logo} alt="store" className="navbar-brand" />
         </Link>
@@ -35,16 +26,6 @@ export default class NavBar extends Component {
             my cart
           </ButtonContainer>
         </Link>
-
-        {/* <ConditionalLink
-          to="/logout"
-          condition={localStorage.getItem("token")}
-          children="Logout"></ConditionalLink> */}
-
-        {/* <Link to="/logout">
-          {!localStorage.getItem("LoggedIn") ? "Logout" : ""}
-        </Link> */}
-        {/* <Link to="/logout">Logout</Link> */}
       </NavWrapper>
     );
   }

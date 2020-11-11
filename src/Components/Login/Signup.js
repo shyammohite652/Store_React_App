@@ -62,8 +62,6 @@ export default class SignUp extends Component {
         <div className="auth-wrapper">
           <div className="auth-inner1">
             <form onSubmit={this.submitForm}>
-              {/* <h3>Sign Up</h3> */}
-
               <div className="form-group">
                 <label>First name</label>
                 <input
@@ -133,9 +131,7 @@ export default class SignUp extends Component {
               <button type="submit" className="btn btn-primary btn-block">
                 Sign Up
               </button>
-              <p className="forgot-password text-right">
-                {/* Already registered <a href="#">sign in?</a> */}
-              </p>
+              <p className="forgot-password text-right"></p>
             </form>
           </div>
         </div>
