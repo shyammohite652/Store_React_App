@@ -15,7 +15,10 @@ export default class MobileList extends Component {
     this.state = {
       loggedIn
     };
-    console.log(props);
+    // this is 595212758daa6810cbba4104
+    //this.props.location.param1 // this is Par1
+    console.log(this.props.location.param1);
+    console.log(this.props.match.params.catId);
   }
   render() {
     if (this.state.loggedIn === false) {

@@ -18,6 +18,7 @@ export default class ProductList extends Component {
       filteredProducts: props.products,
       products: props.products
     };
+
     this.handleChangeSort = this.handleChangeSort.bind(this);
     this.handleChangeSize = this.handleChangeSize.bind(this);
   }
@@ -64,12 +65,25 @@ export default class ProductList extends Component {
   }
 
   UNSAFE_componentWillReceiveProps(props) {
+    // this.setState(() => {
+    //   return { count: props.products.length };
+    // });
+    let prod = [];
+    if (!props.type) {
+      prod = props.products;
+    } else {
+      prod = props.products.filter((item) => item.category === props.type);
+    }
+
     this.setState(() => {
-      return { count: props.products.length };
+      return { count: prod.length, products: prod, filteredProducts: prod };
     });
-    this.setState(() => {
-      return { products: props.products, filteredProducts: props.products };
-    });
+
+    // this.setState(() => {
+    //   return { products: props.products, filteredProducts: props.products };
+    // });
+
+    //   console.log(props);
   }
 
   render() {

@@ -13,8 +13,8 @@ import Logout from "./Components/Login/Logout";
 import SignUp from "./Components/Login/Signup";
 import Forgot from "./Components/Login/ForgotPassword";
 import Sidebar from "./Components/Sidebar";
-import MobileList from "./Components/MobileList";
-import FridgeList from "./Components/FridgeList";
+//import MobileList from "./Components/MobileList";
+//import FridgeList from "./Components/FridgeList";
 import { ProductConsumer } from "./context";
 function App() {
   return (
@@ -25,6 +25,52 @@ function App() {
         <Route path="/logout" component={Logout} />
         <Route path="/signup" component={SignUp} />
         <Route path="/forgot" component={Forgot} />
+
+        {/* <Route path="/productList">
+          <Sidebar
+            pageWrapId={"page-wrap"}
+            outerContainerId={"outer-container"}
+          />
+          <Navbar />
+          <ProductConsumer>
+            {({ products }) => <ProductList products={products} />}
+          </ProductConsumer>
+        </Route> */}
+
+        {/* <Route path="/mobileList">
+          <Sidebar
+            pageWrapId={"page-wrap"}
+            outerContainerId={"outer-container"}
+          />
+          <Navbar />
+          <MobileList />
+        </Route> */}
+
+        <Route exact path="/productList/fridge">
+          <Sidebar
+            pageWrapId={"page-wrap"}
+            outerContainerId={"outer-container"}
+          />
+          <Navbar />
+          <ProductConsumer>
+            {({ products }) => (
+              <ProductList products={products} type="fridge" />
+            )}
+          </ProductConsumer>
+        </Route>
+
+        <Route exact path="/productList/mobile">
+          <Sidebar
+            pageWrapId={"page-wrap"}
+            outerContainerId={"outer-container"}
+          />
+          <Navbar />
+          <ProductConsumer>
+            {({ products }) => (
+              <ProductList products={products} type="mobile" />
+            )}
+          </ProductConsumer>
+        </Route>
 
         <Route path="/productList">
           <Sidebar
@@ -37,22 +83,18 @@ function App() {
           </ProductConsumer>
         </Route>
 
-        <Route path="/mobileList">
-          <Sidebar
-            pageWrapId={"page-wrap"}
-            outerContainerId={"outer-container"}
-          />
-          <Navbar />
-          <MobileList />
-        </Route>
-        <Route path="/fridgeList">
+        {/* <Route path="/mobileList/:catId" component={MobileList}>
+     
+        </Route> */}
+
+        {/* <Route path="/fridgeList">
           <Sidebar
             pageWrapId={"page-wrap"}
             outerContainerId={"outer-container"}
           />
           <Navbar />
           <FridgeList />
-        </Route>
+        </Route> */}
 
         <Route path="/details">
           <Sidebar
