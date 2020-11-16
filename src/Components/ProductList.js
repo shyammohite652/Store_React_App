@@ -68,6 +68,7 @@ export default class ProductList extends Component {
     // this.setState(() => {
     //   return { count: props.products.length };
     // });
+    console.log(props);
     let prod = [];
     if (!props.type) {
       prod = props.products;
@@ -78,12 +79,6 @@ export default class ProductList extends Component {
     this.setState(() => {
       return { count: prod.length, products: prod, filteredProducts: prod };
     });
-
-    // this.setState(() => {
-    //   return { products: props.products, filteredProducts: props.products };
-    // });
-
-    //   console.log(props);
   }
 
   render() {

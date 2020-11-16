@@ -2,7 +2,7 @@ export const storeProducts = [
   {
     id: 1,
     title: "Google Pixel - Black",
-    img: "img/product-1.png",
+    img: "/img/product-1.png",
     price: 10,
     company: "GOOGLE",
     category: "mobile",
@@ -15,7 +15,7 @@ export const storeProducts = [
   {
     id: 2,
     title: "Samsung S7",
-    img: "img/product-2.png",
+    img: "/img/product-2.png",
     price: 16,
     company: "SAMSUNG",
     category: "mobile",
@@ -28,7 +28,7 @@ export const storeProducts = [
   {
     id: 3,
     title: "HTC 10 - Black",
-    img: "img/product-3.png",
+    img: "/img/product-3.png",
     price: 8,
     company: "htc",
     category: "mobile",
@@ -41,7 +41,7 @@ export const storeProducts = [
   {
     id: 4,
     title: "HTC 10 - White",
-    img: "img/product-4.png",
+    img: "/img/product-4.png",
     price: 18,
     company: "htc",
     category: "mobile",
@@ -54,7 +54,7 @@ export const storeProducts = [
   {
     id: 5,
     title: "HTC Desire 626s",
-    img: "img/product-5.png",
+    img: "/img/product-5.png",
     category: "mobile",
     price: 24,
     company: "htc",
@@ -67,7 +67,7 @@ export const storeProducts = [
   {
     id: 6,
     title: "Vintage Iphone",
-    img: "img/product-6.png",
+    img: "/img/product-6.png",
     price: 27,
     company: "apple",
     category: "mobile",
@@ -80,7 +80,7 @@ export const storeProducts = [
   {
     id: 7,
     title: "Iphone 7",
-    img: "img/product-7.png",
+    img: "/img/product-7.png",
     price: 30,
     company: "apple",
     category: "mobile",
@@ -93,7 +93,7 @@ export const storeProducts = [
   {
     id: 8,
     title: "Smashed Iphone",
-    img: "img/product-8.png",
+    img: "/img/product-8.png",
     category: "mobile",
     price: 2,
     company: "apple",
@@ -106,7 +106,7 @@ export const storeProducts = [
   {
     id: 9,
     title: "Samsung 192 L",
-    img: "img/product-9.png",
+    img: "/img/product-9.png",
     price: 9,
     company: "Samsung",
     category: "fridge",
@@ -119,7 +119,7 @@ export const storeProducts = [
   {
     id: 10,
     title: "MarQ",
-    img: "img/product-10.png",
+    img: "/img/product-10.png",
     price: 16,
     company: "MarQ 468 L",
     category: "fridge",
@@ -132,7 +132,7 @@ export const storeProducts = [
   {
     id: 11,
     title: "LG 260 L",
-    img: "img/product-11.png",
+    img: "/img/product-11.png",
     category: "fridge",
     price: 17,
     company: "LG",
@@ -145,7 +145,7 @@ export const storeProducts = [
   {
     id: 12,
     title: "Haier 195 L",
-    img: "img/product-12.png",
+    img: "/img/product-12.png",
     price: 17,
     company: "Haier",
     category: "fridge",
@@ -158,7 +158,7 @@ export const storeProducts = [
   {
     id: 13,
     title: "Whirlpool 265 L",
-    img: "img/product-13.png",
+    img: "/img/product-13.png",
     price: 18,
     company: "Whirlpool",
     category: "fridge",
@@ -171,7 +171,7 @@ export const storeProducts = [
   {
     id: 14,
     title: "Godrej 190 L",
-    img: "img/product-14.png",
+    img: "/img/product-14.png",
     price: 19,
     company: "Godrej",
     category: "fridge",
@@ -184,7 +184,7 @@ export const storeProducts = [
   {
     id: 15,
     title: "Motorola 271 L",
-    img: "img/product-15.png",
+    img: "/img/product-15.png",
     price: 20,
     company: "Motorola",
     category: "fridge",
@@ -197,7 +197,7 @@ export const storeProducts = [
   {
     id: 16,
     title: "Whirlpool 265 L Frost Free",
-    img: "img/product-16.png",
+    img: "/img/product-16.png",
     price: 32,
     company: "Whirlpool",
     category: "fridge",
@@ -212,7 +212,7 @@ export const storeProducts = [
 export const detailProduct = {
   id: 1,
   title: "Google Pixel - Black",
-  img: "img/product-1.png",
+  img: "/img/product-1.png",
   price: 10,
   company: "google",
   info:

@@ -26,26 +26,6 @@ function App() {
         <Route path="/signup" component={SignUp} />
         <Route path="/forgot" component={Forgot} />
 
-        {/* <Route path="/productList">
-          <Sidebar
-            pageWrapId={"page-wrap"}
-            outerContainerId={"outer-container"}
-          />
-          <Navbar />
-          <ProductConsumer>
-            {({ products }) => <ProductList products={products} />}
-          </ProductConsumer>
-        </Route> */}
-
-        {/* <Route path="/mobileList">
-          <Sidebar
-            pageWrapId={"page-wrap"}
-            outerContainerId={"outer-container"}
-          />
-          <Navbar />
-          <MobileList />
-        </Route> */}
-
         <Route exact path="/productList/fridge">
           <Sidebar
             pageWrapId={"page-wrap"}
